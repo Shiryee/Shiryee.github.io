@@ -84,8 +84,8 @@ void draw() {
     rect(89, roadPaintY, 72, 12);
     rect(-21, roadPaintY, 72, 12);
     
-    roadMainY -= 0.55;
-    roadPaintY -= 0.55;
+    roadMainY -= 0.56;
+    roadPaintY -= 0.56;
     
     if (mountainRightY == 70) {
         fill(255, 255, 255);
