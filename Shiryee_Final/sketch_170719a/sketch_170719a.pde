@@ -20,8 +20,8 @@ int mountainRightX1 = 217;
 int mountainRightX2 = 381;
 
 //varForRoad
-int roadMainY = 350; 
-int roadPaintY = 379;
+int roadMainY = 380; 
+int roadPaintY = 409;
 
 void setup() {
   size(400, 400);
