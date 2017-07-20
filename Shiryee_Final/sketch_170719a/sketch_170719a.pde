@@ -1,3 +1,5 @@
+int value = 0;
+
 //varForSun
 int sunY = 367;
 
@@ -25,7 +27,16 @@ void setup() {
   size(400, 400);
 }
 
+void keyPressed() {
+  if (value == 0) {
+    value = 255;
+  } else {
+    value = 0;
+  }
+}
+
 void draw() {
+    if (value == 255) {
     //scenery
     noStroke();
     background(195, 236, 250);
@@ -75,15 +86,20 @@ void draw() {
     
     roadMainY -= 0.44;
     roadPaintY -= 0.44;
-
+    
     if (mountainRightY == 70) {
         fill(255, 255, 255);
         textSize(20);
-        text("2017 Leadership in Tech", 80, 240);  
-        noLoop();
+        text("2017 Leadership in Tech", 100, 240);
+        noLoop();    
     }
     
 };
+
+}
+
+    
+
 
     
 
