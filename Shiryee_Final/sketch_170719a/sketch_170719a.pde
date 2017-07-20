@@ -98,7 +98,7 @@ void draw() {
   background(195, 236, 350);
   fill(0, 0, 0);
   textSize(20);
-  text("Click on the box, then press any key to start", 35, 200);
+  text("Click on the box, then press any key to start", 30, 200);
 }
 
 }
