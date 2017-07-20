@@ -1,3 +1,4 @@
+int value = 0;
 
 //varForSun
 int sunY = 367;
@@ -26,7 +27,16 @@ void setup() {
   size(400, 400);
 }
 
+void keyPressed() {
+  if (value == 0) {
+    value = 255;
+  } else {
+    value = 0;
+  }
+}
+
 void draw() {
+    if (value == 255) {
     //scenery
     noStroke();
     background(195, 236, 250);
@@ -74,8 +84,8 @@ void draw() {
     rect(89, roadPaintY, 72, 12);
     rect(-21, roadPaintY, 72, 12);
     
-    roadMainY -= 0.5;
-    roadPaintY -= 0.5;
+    roadMainY -= 0.44;
+    roadPaintY -= 0.44;
     
     if (mountainRightY == 70) {
         fill(255, 255, 255);
@@ -85,6 +95,12 @@ void draw() {
     }
     
 };
+
+}
+
+    
+
+
 
     
 
