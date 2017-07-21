@@ -1,5 +1,3 @@
-int value = 0;
-int value = 0;
 int start = millis();
 
 //varForText
@@ -34,15 +32,6 @@ int roadPaintY = 629;
 void setup() {
   size(400, 400);
 }
-
-void keyPressed() {
-  if (value == 0) {
-    value = 255;
-  } else {
-    value = 0;
-  }
-}
-
 
 void draw() {
     if (value == 255) {
