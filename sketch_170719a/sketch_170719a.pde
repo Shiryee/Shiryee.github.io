@@ -44,6 +44,86 @@ void draw() {
     //sun
     fill(255, 204, 0);
     ellipse(217, sunY, 70, 70);
+
+    if (mountainRightY > 70) {
+        sunY --;
+    }
+
+    // clouds 
+    fill(255, 255, 255);
+    // left cloud
+    ellipse(leftX, leftY, 126, 97);
+    ellipse(leftX+62, leftY, 70, 60);
+    ellipse(leftX-62, leftY, 70, 60);
+    // right cloud
+    ellipse(rightX, rightY, 126, 97);
+    ellipse(rightX+62, rightY, 70, 60);
+    ellipse(rightX-62, rightY, 70, 60);
+
+    if (mountainRightY > 70) {
+        leftY --;
+        rightY --;
+    }
+
+    //mountains
+      fill(22, 79, 13);
+      triangle(mountainLeftX2, 407, mountainLeftX1, 412, 113, mountainLeftY);
+      triangle(mountainRightX1, 400, mountainRightX2, 400, 288, mountainRightY);
+      
+    if (mountainRightY > 70) {
+
+        //mountainLeftMove
+
+        mountainLeftY --;
+        mountainLeftX1 ++;
+        mountainLeftX2 --;
+        
+        //mountainRightMove
+        mountainRightY --;
+        mountainRightX1 --;
+        mountainRightX2 ++;
+    }
+
+
+    //road
+    fill(87, 81, 81);
+    rect(0, roadMainY, 413, 71);
+    fill(235, 225, 117);
+    rect(200, roadPaintY, 72, 12);
+    rect(311, roadPaintY, 72, 12);
+    rect(89, roadPaintY, 72, 12);
+    rect(-21, roadPaintY, 72, 12);
+
+    if (mountainRightY > 70) {
+        roadMainY --;
+        roadPaintY --;
+    }
+
+    if (mountainRightY == 70) {
+        fill(255, 255, 255);
+        textSize(20);
+        text("2017 Leadership in Tech", 100, 240); 
+    }
+
+       if(millis() - start >= 7000) {
+          background(225, 100, 255);
+    }
+
+    } else {
+        background(195, 236, 350);
+        fill(0, 0, 0);
+        textSize(20);
+        text("Click on the box, then press any key to start", 2.5, 200);
+    }  
+
+
+};
+    noStroke();
+    background(195, 236, 250);
+    
+    //sun
+    fill(255, 204, 0);
+    ellipse(217, sunY, 70, 70);
     
     sunY --;
     
