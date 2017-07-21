@@ -134,7 +134,7 @@ void draw() {
           rect(89, roadPaintY, 72, 12);
           rect(-21, roadPaintY, 72, 12);
           
-          if (millis() - start >= 11000) {
+          if (millis() - start >= 10000) {
             fill(255, 255, 220);
             text("PERSEVERANCE", textX, 240);
             text("TEAMWORK", text2X, 240);
