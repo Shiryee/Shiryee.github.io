@@ -20,8 +20,8 @@ int mountainRightX1 = 217;
 int mountainRightX2 = 381;
 
 //varForRoad
-int roadMainY = 590; 
-int roadPaintY = 619;
+int roadMainY = 600; 
+int roadPaintY = 634;
 
 void setup() {
   size(400, 400);
@@ -85,8 +85,8 @@ void draw() {
     rect(89, roadPaintY, 72, 12);
     rect(-21, roadPaintY, 72, 12);
     
-    roadMainY -= 0.44;
-    roadPaintY -= 0.44;
+    roadMainY --;
+    roadPaintY --;
 
     if (mountainRightY == 70) {
         fill(255, 255, 255);
@@ -94,7 +94,12 @@ void draw() {
         text("2017 Leadership in Tech", 80, 240);  
         noLoop();
     }
-  }
+  } else {
+  background(195, 236, 350);
+  fill(0, 0, 0);
+  textSize(20);
+  text("Click on the box, then press any key to start", 2.5, 200);
+  }  
     
 }
 
