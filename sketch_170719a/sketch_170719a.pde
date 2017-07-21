@@ -1,5 +1,4 @@
-//switch scenes
-
+int value = 0;
 
 //varForSun
 int sunY = 367;
@@ -21,11 +20,19 @@ int mountainRightX1 = 217;
 int mountainRightX2 = 381;
 
 //varForRoad
-int roadMainY = 590; 
-int roadPaintY = 619;
+int roadMainY = 600; 
+int roadPaintY = 634;
 
 void setup() {
   size(400, 400);
+}
+
+void keyPressed() {
+  if (value == 0) {
+    value = 255;
+  } else {
+    value = 0;
+  }
 }
 
 void draw() {
@@ -38,7 +45,8 @@ void draw() {
     ellipse(217, sunY, 70, 70);
     
     sunY --;
-    
+    if (value == 255) {
+
     // clouds 
     fill(255, 255, 255);
     // left cloud
@@ -76,8 +84,8 @@ void draw() {
     rect(89, roadPaintY, 72, 12);
     rect(-21, roadPaintY, 72, 12);
     
-    roadMainY -= 0.44;
-    roadPaintY -= 0.44;
+    roadMainY --;
+    roadPaintY --;
     
     if (mountainRightY == 70) {
         fill(255, 255, 255);
@@ -85,6 +93,7 @@ void draw() {
         text("2017 Leadership in Tech", 100, 240);
         noLoop();    
     }
+   }
     
 };
 
