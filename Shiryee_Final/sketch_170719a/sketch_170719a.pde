@@ -34,7 +34,6 @@ void setup() {
 }
 
 void draw() {
-    if (value == 255) {
     //scenery
     noStroke();
     background(195, 236, 250);
@@ -147,8 +146,6 @@ void draw() {
             text4X ++;
           }
    }
-  
-  }
 
 
 };
