@@ -164,7 +164,6 @@ void draw() {
   fill(0, 0, 0);
   textSize(20);
   text("Click on the box, then press any key to start", 2.6, 200);
-  text("Press any key to restart", 5, 250);
 }  
 
 
